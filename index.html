@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div class="heading">
+            <h2>Temperature</h2>
+            <h2>Converter</h2>
+        </div>
+        <div class="content">
+            <div class="converter">
+                <div class="box"><input type="number" name="fromtemp" id="fromdeg" placeholder="FROM"></div>
+                <div class="box"><input type="number" name="totemp" id="todeg" placeholder="TO"></div>
+            </div>
+            <div class="units">
+                <select id="from" onChange="myFromSelector(this);">
+                    <option value="">Choose From</option>
+                    <option value="Celcius">Celcius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+                <select id="to" onChange="myToSelector(this);">
+                    <option value="">Choose To</option>
+                    <option value="Celcius">Celcius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="submit" >
+            <button type="submit" id="submit">Convert Now</button>
+        </div>
+        <div class="clear">
+            <button>Clear</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
